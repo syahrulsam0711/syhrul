@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Aqila</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#rooms">Kamar</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#facilities">Fasilitas</a></li>
+                <li><a href="#booking">Pemesanan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Selamat Datang di Hotel Aqila</h1>
+        <p>Hotel Aqila adalah tempat sempurna untuk menginap dengan kenyamanan dan fasilitas terbaik.</p>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Hotel Aqila terletak di pusat kota, menyediakan layanan bintang lima dengan harga yang terjangkau. Kami memiliki berbagai jenis kamar untuk memenuhi kebutuhan Anda.</p>
+    </section>
+
+    <section id="rooms">
+        <h2>Kamar Kami</h2>
+        <div class="room">
+            <h3>Kamar Standar</h3>
+            <p>Harga: Rp500.000 per malam</p>
+        </div>
+        <div class="room">
+            <h3>Kamar vip</h3>
+            <p>Harga: Rp800.000 per malam</p>
+        </div>
+        <div class="room">
+            <h3>Kamar vvip</h3>
+            <p>Harga: Rp1.000.000 per malam</p>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Pemesanan Kamar</h2>
+        <form id="bookingForm">
+            <label for="checkin">Tanggal Check-in:</label>
+            <input type="date" id="checkin" name="checkin" required><br><br>
+
+            <label for="checkout">Tanggal Check-out:</label>
+            <input type="date" id="checkout" name="checkout" required><br><br>
+
+            <label for="room">Pilih Kamar:</label>
+            <select id="room" name="room" required>
+                <option value="standar">Kamar Standar - Rp500.000 per malam</option>
+                <option value="vip">Kamar vip - Rp800.000 per malam</option>
+                <option value="vvip">Kamar vvip - Rp1.000.000 per malam</option>
+            </select><br><br>
+
+            <label for="totalPrice">Total Harga:</label>
+            <input type="text" id="totalPrice" name="totalPrice" disabled><br><br>
+
+            <input type="submit" value="Pesan Sekarang">
+        </form>
+    </section>
+
+    <section id="gallery">
+        <h2>Galeri</h2>
+        <div class="gallery-images">
+            <img src="hotel1.jpg" alt="Hotel Aqila" width="300">
+            <img src="hotel2.jpg" alt="Hotel Aqila" width="300">
+            <img src="hotel3.jpg" alt="Hotel Aqila" width="300">
+        </div>
+    </section>
+
+    <section id="facilities">
+        <h2>Fasilitas Kami</h2>
+        <ul>
+            <li>Wi-Fi Gratis</li>
+            <li>Restoran 24 Jam</li>
+            <li>Fitness Center</li>
+            <li>biliard</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Alamat: Jl. jalur dua ahmad yani No.09, Kota benteng</p>
+        <p>Telepon: (021) 12345678</p>
+        <p>Email: info@hotelaqila.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel Aqila. Aman dan terpercaya.</p>
+    </footer>
+</body>
+</html>
